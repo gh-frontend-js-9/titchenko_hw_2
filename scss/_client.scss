@@ -1,0 +1,16 @@
+.clients-container {
+  max-width: 1170px;
+  margin: auto;
+}
+.client-element {
+  width: 24%;
+  float: left;
+  text-align: center;
+  padding: 40px 0;
+}
+@media only screen and (max-width: 768px) {
+  .client-element {
+    display: block;
+    width: 100%;
+  }
+}
