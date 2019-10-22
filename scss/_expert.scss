@@ -1,17 +1,20 @@
 .expert-wrap{
   background-color: #f1f8ff;
+  width: 100%;
 }
 .expert-container {
   max-width: 1170px;
-  margin: auto;
+  margin: 0 auto;
   background-color: #f1f8ff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .expert-element {
-  float: left;
-  width: 32.5%;
-  display: inline-block;
+  min-width: 30%;
   text-align: center;
   background-color: #f1f8ff;
+  margin: 0 auto;
 }
 .expert-element img {
   padding: 20px;
@@ -26,6 +29,10 @@
   line-height: 35px;
   font-size: 16px;
   font-weight: 400;
+  max-width: 300px;
+  color: #5a5a5a;
+  font-family: Lato, sans-serif;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 600px) {

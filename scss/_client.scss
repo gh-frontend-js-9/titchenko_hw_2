@@ -1,16 +1,18 @@
+.client-wrap{
+  background-color: #f1f8ff;
+  padding-bottom: 70px;
+}
 .clients-container {
   max-width: 1170px;
-  margin: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .client-element {
-  width: 24%;
-  float: left;
+  min-width: 24%;
   text-align: center;
-  padding: 40px 0;
+  padding: 20px;
+  opacity: 0.3;
 }
-@media only screen and (max-width: 768px) {
-  .client-element {
-    display: block;
-    width: 100%;
-  }
-}
+

@@ -150,19 +150,22 @@ h1 {
   color: #818181; }
 
 .expert-wrap {
-  background-color: #f1f8ff; }
+  background-color: #f1f8ff;
+  width: 100%; }
 
 .expert-container {
   max-width: 1170px;
-  margin: auto;
-  background-color: #f1f8ff; }
+  margin: 0 auto;
+  background-color: #f1f8ff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
 
 .expert-element {
-  float: left;
-  width: 32.5%;
-  display: inline-block;
+  min-width: 30%;
   text-align: center;
-  background-color: #f1f8ff; }
+  background-color: #f1f8ff;
+  margin: 0 auto; }
 
 .expert-element img {
   padding: 20px; }
@@ -176,27 +179,78 @@ h1 {
   padding: 10px;
   line-height: 35px;
   font-size: 16px;
-  font-weight: 400; }
+  font-weight: 400;
+  max-width: 300px;
+  color: #5a5a5a;
+  font-family: Lato, sans-serif;
+  margin: 0 auto; }
 
 @media only screen and (max-width: 600px) {
   .expert-element {
     display: block;
     width: 100%; } }
 
+.latest-element-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.latest-element {
+  background-color: #f4f4f4;
+  width: 330px;
+  height: 270px;
+  margin: 15px auto;
+  padding-bottom: 0;
+  display: flex;
+  flex-wrap: wrap; }
+
+.latest-element img {
+  margin: 0 auto; }
+
+.latest-element_img_center {
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%; }
+
+.client-wrap {
+  background-color: #f1f8ff;
+  padding-bottom: 70px; }
+
 .clients-container {
   max-width: 1170px;
-  margin: auto; }
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
 
 .client-element {
-  width: 24%;
-  float: left;
+  min-width: 24%;
   text-align: center;
-  padding: 40px 0; }
-
-@media only screen and (max-width: 768px) {
-  .client-element {
-    display: block;
-    width: 100%; } }
+  padding: 20px;
+  opacity: 0.3; }
 
 footer {
+  margin: auto;
+  display: flex;
   background-color: #3c98ff; }
+
+.footer-text {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 65px;
+  color: #fff;
+  margin: 0 auto; }
+
+.form-wrap {
+  display: inline-block; }
+
+#footer-hire-me {
+  margin: 65px; }
+
+@media screen and (max-width: 840px) {
+  #footer-hire-me {
+    margin: 25px; }
+  .form-wrap {
+    display: block;
+    text-align: center; } }
